@@ -1,0 +1,20 @@
+PODS:
+  - AgoraRtcEngine_iOS (2.0.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AgoraRtcEngine_iOS
+    - Masonry
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: b7e6eea4f3d16ace3264c0a30926c788f3253b6f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: d529fedf1f532d189600eddf4692bd7c1cc30d13
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  DouBo_Live
+//
+//  Created by coco on 16/12/29.
+//  Copyright © 2016年 wby. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+#import "TQUIHelper.h"
+#import "Masonry.h"
+#import "UIView+Layout.h"//适配宏定义等
+#import "UIView+ZWToast.h"
+#import "UIColor+Expanded.h"
+
+#endif
+
+//对象是否是XX class
+#ifndef OBJECT_IS
+#define OBJECT_IS(__Object__,__ClassName__) \
+([__Object__ isKindOfClass:__ClassName__])
+#endif
+
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define SYSVERSION  ([[UIDevice currentDevice].systemVersion floatValue])
+
+#define STATUS_BAR_HEIGHT           [UIApplication sharedApplication].statusBarFrame.size.height
+
+// 16进制颜色转换
+#define COLOR_WITH_HEX(hexValue, a) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexValue & 0x00FF) >> 8)) / 255.0 blue:((float)(hexValue & 0xFF)) / 255.0 alpha:a]

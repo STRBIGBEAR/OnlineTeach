@@ -1,0 +1,6 @@
+module Pods_OnlineTutor {
+  umbrella header "Pods-OnlineTutor-umbrella.h"
+
+  export *
+  module * { export * }
+}
